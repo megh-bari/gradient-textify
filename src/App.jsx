@@ -119,7 +119,7 @@ const App = () => {
 
             <div className="flex items-center gap-6">
               <a
-                href="https://twitter.com/yourusername"
+                href="https://x.com/megh_bari"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -133,7 +133,7 @@ const App = () => {
               </a>
 
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/megh-bari"
                 target="_blank"
                 rel="noopener noreferrer"
               >
