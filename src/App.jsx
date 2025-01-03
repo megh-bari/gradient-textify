@@ -108,47 +108,47 @@ const App = () => {
     <div className="min-h-screen flex flex-col">
       {/*  */}
       <nav className="w-full">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center px-8 py-6">
-          <a
-            href="/"
-            className="text-2xl sm:text-3xl lg:text-3xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent hover:opacity-90 transition-opacity"
-          >
-            GradientTextify
-          </a>
-          
-          <div className="flex items-center gap-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center px-8 py-6">
             <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/"
+              className="text-2xl sm:text-3xl lg:text-3xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent hover:opacity-90 transition-opacity"
             >
-              <Button
-                variant="ghost"
-                size="icon"
-                className="hover:bg-slate-500 hover:bg-opacity-20 rounded-full"
-              >
-                <Twitter className="!h-6 !w-6 text-slate-100 hover:text-blue-500" />
-              </Button>
+              GradientTextify
             </a>
 
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                variant="ghost"
-                size="icon"
-                className="hover:bg-slate-500 hover:bg-opacity-20 rounded-full"
+            <div className="flex items-center gap-6">
+              <a
+                href="https://twitter.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Github className="!h-6 !w-6 text-slate-100 hover:text-slate-500" />
-              </Button>
-            </a>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:bg-slate-500 hover:bg-opacity-20 rounded-full"
+                >
+                  <Twitter className="!h-6 !w-6 text-slate-100 hover:text-blue-500" />
+                </Button>
+              </a>
+
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:bg-slate-500 hover:bg-opacity-20 rounded-full"
+                >
+                  <Github className="!h-6 !w-6 text-slate-100 hover:text-slate-500" />
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
       {/* Hero Section*/}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 text-center">
@@ -167,10 +167,17 @@ const App = () => {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
-          <Button className="h-10 px-4 text-sm font-medium bg-black text-white hover:bg-black/80  transition-all duration-300 border border-transparent hover:border-white">
-            <Github className="mr-2 h-4 w-4" />
-            Contribute
-          </Button>
+          <a
+            href="https://github.com/megh-bari/gradient-textify.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="h-10 px-4 text-sm font-medium bg-black text-white hover:bg-black/80 transition-all duration-300 border border-transparent hover:border-white">
+              <Github className="mr-2 h-4 w-4" />
+              Contribute
+            </Button>
+          </a>
+
           <Button
             variant="outline"
             onClick={resetBackground}
