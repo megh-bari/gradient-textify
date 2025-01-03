@@ -219,7 +219,10 @@ const App = () => {
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => setCurrentGradient(item.textGradient)}
+                  onClick={() => {
+                    setCurrentGradient(item.textGradient)
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   className="text-slate-300 hover:text-slate-100 hover:bg-slate-800/50"
                 >
                   <Eye className="mr-2 h-4 w-4" />
